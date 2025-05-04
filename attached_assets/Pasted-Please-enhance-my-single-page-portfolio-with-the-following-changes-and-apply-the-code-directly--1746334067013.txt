@@ -1,0 +1,136 @@
+Please enhance my single-page portfolio with the following changes and apply the code directly.
+
+🎯 GOALS:
+- Fix hero text being hidden behind nav
+- Add "magic + tech" effects (particles, scroll animations, floating mascot)
+- Add a back-to-top button
+- Animate section entry
+- Optimize for mobile
+- Make everything smooth and pro-looking
+
+📁 FILES TO EDIT: index.html, style.css, script.js
+
+------------------------------------------------------
+🔧 STYLE.CSS — ADD THIS
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-content {
+  padding-top: 120px;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+/* Floating mascot animation */
+.floating {
+  animation: float 4s ease-in-out infinite;
+  transition: filter 0.3s ease-in-out;
+}
+.floating:hover {
+  filter: drop-shadow(0 0 8px #ffd700) brightness(1.2);
+}
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* Back to Top Button */
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #444;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#topBtn:hover {
+  background-color: #ffd700;
+}
+
+------------------------------------------------------
+🧠 SCRIPT.JS — ADD THIS
+
+// ParticlesJS config
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 55 },
+    color: { value: "#ffffff" },
+    shape: {
+      type: "circle",
+      stroke: { width: 0 },
+      polygon: { nb_sides: 5 }
+    },
+    opacity: { value: 0.4, random: true },
+    size: { value: 3, random: true },
+    line_linked: {
+      enable: true,
+      distance: 130,
+      color: "#ffd700",
+      opacity: 0.3,
+      width: 1
+    },
+    move: { enable: true, speed: 2 }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: true, mode: "grab" },
+      onclick: { enable: true, mode: "push" }
+    },
+    modes: {
+      grab: { distance: 150, line_linked: { opacity: 0.6 } },
+      push: { particles_nb: 4 }
+    }
+  },
+  retina_detect: true
+});
+
+// Back to top button
+window.onscroll = function () {
+  document.getElementById("topBtn").style.display =
+    (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? "block" : "none";
+};
+function topFunction() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// AOS animations
+AOS.init({
+  duration: 800,
+  once: true,
+});
+
+------------------------------------------------------
+🧩 INDEX.HTML — INSERT THE FOLLOWING:
+
+<!-- In <head> -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- Before </body> -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+
+<!-- Add Back to Top Button just before </body> -->
+<button onclick="topFunction()" id="topBtn" title="Go to top">⬆</button>
+
+<!-- In each section tag, add a scroll animation like: -->
+<section id="projects" data-aos="fade-up">
+<section id="resume" data-aos="slide-up">
+<section id="about" data-aos="fade-in">
+
+------------------------------------------------------
+
+Make all updates responsive and accessible. Comment new code clearly so I can keep extending it later. All changes should reflect a magic+tech portfolio aesthetic.

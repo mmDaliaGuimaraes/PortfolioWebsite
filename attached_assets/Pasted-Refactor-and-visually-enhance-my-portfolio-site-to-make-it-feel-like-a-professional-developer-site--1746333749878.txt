@@ -1,0 +1,50 @@
+Refactor and visually enhance my portfolio site to make it feel like a professional developer site, themed around "magic meets tech", and optimized for recruiter viewing.
+
+🧱 STRUCTURE FIXES:
+- Fix issue where the "Marcio Guimarães" header is hidden behind the nav bar
+  > Add top padding/margin to `.hero-content` (around 100px) so the name is visible on all screen sizes
+  > If using `position: absolute` for nav or particles, adjust z-index and layout stacking context properly
+- Use flexbox or grid to center `.hero-content` both vertically and horizontally, without overlapping
+
+🎯 STAY SINGLE-PAGE:
+- Keep all content in one page
+- Add smooth scroll between sections using `scroll-behavior: smooth` in CSS
+- Add scrollspy-style nav: highlight the active section in nav bar as user scrolls
+
+🪄 MAGIC + TECH ANIMATIONS:
+- Use `particles.js` in the background with a custom theme:
+  > Magic colors: deep indigo, glowing blue, soft gold
+  > Particle effects: floating sparkles, connecting nodes (tech feel)
+- Animate mascot gently floating with a glow and sparkle trail on hover
+- Animate section reveals using [AOS.js](https://michalsnik.github.io/aos/) (e.g., fade-up, slide-in for projects/resume/about)
+- Animate buttons with subtle pulsing or gradient borders on hover
+
+🎨 VISUAL STYLE:
+- Hero section: full height, centered text, background particles
+- Font: use `Poppins` for headings and `IBM Plex Mono` or `Inter` for body text
+- Button style: rounded corners, glowing borders, hover transitions
+- Add a dark/light toggle button with a moon/sun icon
+- Use magical gradients (e.g. indigo to violet) as section dividers or footer
+
+📱 MOBILE OPTIMIZATION:
+- Collapse nav into a hamburger menu using vanilla JS
+- Stack hero elements on smaller screens
+- Ensure all project images scale correctly
+
+📸 MEDIA + VISUALS:
+- All Focus Pocus mascot and screen images should animate in with `fade-up` or `zoom-in`
+- Include lightbox effect for screenshot gallery
+- Ensure alt text is descriptive and accessible
+
+🧠 EXTRAS:
+- Add a “Back to Top” button in bottom-right corner that appears on scroll
+- Include subtle parallax effect on hero if possible
+- Animate page load with a short intro animation (mascot wand wave or text flicker)
+
+📁 OUTPUT FILES:
+- index.html — updated structure with fixes and section IDs
+- style.css — new layout styles, animations, scroll effects
+- script.js — handles scrollspy, dark mode toggle, animations
+- Include necessary CDN links (particles.js, AOS.js, Google Fonts)
+
+Comment code clearly so I can edit later.

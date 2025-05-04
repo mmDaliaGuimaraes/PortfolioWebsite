@@ -1,0 +1,121 @@
+Focus Pocus – The Magictivity App
+Project Presentation Outline
+Team Name: The Productivity Bandits
+Class: PnP2
+File: Focus_Pocus_The_Magictivity_App_PresentationOutline.docx
+
+I. Introduction
+Purpose:
+To present the design, development, and MVP feasibility of Focus Pocus, a magical-themed AI productivity app suite. The app aims to help users focus, plan, and stay on track using AI automation and accessibility-first design.
+
+Presentation Style:
+A creative, character-led presentation featuring a branded mascot that guides the audience through each app and development milestone. This format combines storytelling, technical updates, and visuals for a more engaging delivery.
+
+II. Concept Overview – App Ideas
+1. AI-Powered Notes & Productivity App
+Converts voice to text
+
+AI-generated summaries
+
+Smart tagging & task extraction
+
+2. AI-Powered Daily Planner & Focus Timer
+Personalized AI-generated daily schedules
+
+Pomodoro-style timers & distraction tracking
+
+Calendar & task manager integrations
+
+3. ADHD & Productivity Assistant (MVP Focus)
+Background task automation
+
+Autonomous + Manual modes
+
+Parental controls for ADHD support
+
+Offline functionality for privacy
+
+III. Development Progress
+Frontend:
+UI screens designed by Jonathan
+
+Focused on intuitive design and clear onboarding
+
+Backend:
+Firebase database structure and authentication
+
+Originally assigned to Devin and Damaris
+
+Damaris led development and continuous debugging
+
+API + Integration:
+Tristan assisted in connecting frontend to backend
+
+Project managed and integrated by [Your Name]
+
+Real-time debugging and support during sign-in bug
+
+IV. Technical Challenges & Solutions
+Challenge	Response
+Firebase sign-in issue during integration	Active debugging & testing in Firebase console
+Branch conflicts during team merge	Lead coordinated Git merges & testing
+Scope creep with AI features	Refined MVP to keyword-based system & local storage
+Cross-platform limitations	Focused on Android + Windows for MVP
+
+V. MVP Feasibility Plan
+Deliverable in 2 Months:
+Local keyword detection system
+
+Locked task automation for ADHD support
+
+Two user modes (Independent & Parental)
+
+Minimal UI with secure local storage
+
+Optional GPT-4o (offline-safe) integration
+
+Deferred Features:
+NLP and deep AI summarization
+
+Voice control
+
+iOS/macOS support
+
+Cross-user collaboration
+
+VI. Team Contributions
+Team Member	Role	Contributions
+[Your Name]	Project Lead & Integrator	Team management, frontend-backend merge, bug resolution
+Jonathan	Frontend Developer	UI screen design
+Tristan	API Developer	Connected frontend with backend logic
+Damaris	Backend Developer	Led Firebase structure, authentication & debugging
+Devin	Backend Support	Initial assignment, minimal implementation
+
+VII. Creative Direction
+Mascot & Branding:
+
+“Focus Pocus” mascot featured throughout app and presentation
+
+Designed to enhance engagement and align with magical theme
+
+Presentation Design:
+
+Character-led storytelling
+
+Slides, scenes, and scripts written to match brand tone
+
+Includes visuals, animations, and voiceover options
+
+VIII. Conclusion
+Focus Pocus is a creative, technically viable productivity platform — rooted in AI, built for accessibility, and styled to be unforgettable. Our MVP addresses real-world needs while leaving room for powerful, scalable expansion.
+
+Next Steps:
+
+Finish integrating backend
+
+Resolve sign-in issues
+
+Finalize UI
+
+Prepare for MVP demo & potential user testing
+
