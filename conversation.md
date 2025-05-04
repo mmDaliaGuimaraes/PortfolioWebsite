@@ -1,0 +1,1 @@
+User provided resume, project details, and screenshots. Final site includes consistent image gallery with descriptions, updated experience, and working video links.
